@@ -4,19 +4,19 @@
 
 Forked from FlappySwift (https://github.com/fullstackio/FlappySwift)[https://github.com/fullstackio/FlappySwift].
 
-This fork illustrates how to add powerful parental controls to your game in under 2 hours.
+This fork illustrates how to add powerful parental controls to your game in under 2 hours using the OpenSource Allow2 Cocoapod.
 
 Tutorial page being published... Stay tuned...
 
-![FlappySwift](http://i.imgur.com/1NLoToU.gif)
+# Original FlappySwift Notes
 
-# FlappySwift Notes
+![FlappySwift](http://i.imgur.com/1NLoToU.gif)
 
 We're launching a course [Game Programming with Swift](https://fullstackedu.com)
 
 If you are interested in early access to the course, head to [fullstackedu.com](https://www.fullstackedu.com) and _enter in your email in the signup box at the bottom of the page_ to be notified of updates on the course itself.
 
-# FlappySwift Authors
+# Original FlappySwift Authors
 
 - Nate Murray - [@eigenjoy](https://twitter.com/eigenjoy)
 - Ari Lerner - [@auser](https://twitter.com/auser)
