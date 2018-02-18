@@ -2,7 +2,7 @@
 
 # FlappySwift
 
-Forked from FlappySwift (https://github.com/fullstackio/FlappySwift)[https://github.com/fullstackio/FlappySwift].
+Forked from FlappySwift [https://github.com/fullstackio/FlappySwift](https://github.com/fullstackio/FlappySwift).
 
 This fork illustrates how to add powerful parental controls to your game in under 2 hours using the OpenSource Allow2 Cocoapod.
 
