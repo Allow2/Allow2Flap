@@ -7,15 +7,23 @@
 //
 
 import UIKit
+import Allow2
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
                             
     var window: UIWindow?
 
+    var allow2Timer : Timer?
+    let allow2Activities = [
+        Allow2.Allow2Activity(activity: Allow2.Activity.Gaming, log: true),
+        Allow2.Allow2Activity(activity: Allow2.Activity.ScreenTime, log: true)
+    ]
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Allow2.shared.deviceToken = "srYah16RVN0vt9lw"
+        startAllow2Timer()
         return true
     }
 
@@ -24,13 +32,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
     }
 
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        startAllow2Timer()
     }
 
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        Allow2.shared.childId = nil
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
@@ -44,3 +51,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate {
+    
+    func startAllow2Timer() {
+        if (allow2Timer == nil) {
+            allow2Timer = Timer.scheduledTimer(timeInterval: 10.0, target: self, selector: #selector(AppDelegate.checkAllow2), userInfo: nil, repeats: true)
+            self.checkAllow2()
+        }
+    }
+    
+    @objc public func checkAllow2() {
+        // this is called every 10 seconds. On each call, we blindly ask permission,
+        // which will fail if there is no "default" child
+        // on failure, we can check if we are actually paired, and if so,
+        // then we can prompt for the user to select WHO they are
+        Allow2.shared.check(activities: allow2Activities, log: true)
+    }
+}
