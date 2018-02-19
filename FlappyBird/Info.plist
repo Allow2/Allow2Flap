@@ -32,5 +32,7 @@
 	</array>
 	<key>UIStatusBarHidden</key>
 	<true/>
+    <key>NSBluetoothPeripheralUsageDescription</key>
+    <string>Use bluetooth for fast Allow2 pairing.</string>
 </dict>
 </plist>
