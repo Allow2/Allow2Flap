@@ -43,5 +43,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+        <key>NSBluetoothPeripheralUsageDescription</key>
+        <string>Use bluetooth for fast Allow2 pairing.</string>
 </dict>
 </plist>
