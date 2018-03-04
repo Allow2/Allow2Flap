@@ -23,9 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         Allow2.shared.deviceToken = "8nxEst2VyCVVrxUm"
+        //Allow2.shared.env = .staging
         // for more options see the README
 //        if let allow2Props = NSBundle.mainBundle().infoDictionary?["Allow2"] as! [ String : Any ] {
-//            Allow2.shared.environment = allow2Props["environment"] as! String
+//            Allow2.shared.env = allow2Props["environment"] as! String
 //        }
         startAllow2Timer()
         return true
