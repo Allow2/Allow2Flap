@@ -1,11 +1,11 @@
 PODS:
-  - Allow2 (1.0.0)
+  - Allow2 (1.1.0)
 
 DEPENDENCIES:
   - Allow2
 
 SPEC CHECKSUMS:
-  Allow2: 94de432af3a42bbb5dfb41ca1bc5fffd20fe5b21
+  Allow2: 1f4d5374c4779c87bb2c12f9582ad8620788fe61
 
 PODFILE CHECKSUM: 96bc50695c944e50dd56c38feec0e6f51ef05713
 
