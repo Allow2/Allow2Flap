@@ -36,6 +36,8 @@ class GameViewController: UIViewController {
     var allow2BlockViewController: Allow2BlockViewController!
     var allow2LoginViewController: Allow2LoginViewController!
 
+    @IBOutlet var pairView : UIView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -86,12 +88,12 @@ class GameViewController: UIViewController {
 
 extension GameViewController: Allow2PairingViewControllerDelegate {
     
-    func showAllow2PairButton() {
-        allow2PairButton?.isHidden = Allow2.shared.isPaired
+    func showPairView() {
+        pairView?.isHidden = Allow2.shared.isPaired
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.showAllow2PairButton()
+        self.showPairView()
         NotificationCenter.default.addObserver(self, selector: #selector(GameViewController.Allow2CheckResultNotification(notification:)), name: NSNotification.Name.allow2CheckResultNotification, object: nil)
     }
     

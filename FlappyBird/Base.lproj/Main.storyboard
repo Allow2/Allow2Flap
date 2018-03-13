@@ -6,14 +6,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="FlappyBird" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Allow2Flap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="maK-i9-Uhn"/>
                         <viewControllerLayoutGuide type="bottom" id="khH-OB-KpY"/>
@@ -22,26 +21,90 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chS-Qm-dpS">
-                                <rect key="frame" x="305" y="28" width="46" height="30"/>
-                                <state key="normal" title="Allow2"/>
-                                <connections>
-                                    <action selector="allow2Pair" destination="BV1-FR-VrT" eventType="primaryActionTriggered" id="p9U-59-ZRm"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lf6-T5-l05">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJK-VN-jLH">
+                                        <rect key="frame" x="70" y="423" width="234" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="234" id="0Rg-Y1-GlQ"/>
+                                            <constraint firstAttribute="height" constant="120" id="D3h-VM-ik5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <state key="normal" title="Pair with Allow2"/>
+                                        <connections>
+                                            <action selector="allow2Pair" destination="BV1-FR-VrT" eventType="primaryActionTriggered" id="q31-PM-TaJ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Before your children can play this game, you need to pair it with a free Allow2 parent account." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FzX-Cz-eVA">
+                                        <rect key="frame" x="40" y="252" width="295" height="163"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="295" id="Vei-iS-yX0"/>
+                                            <constraint firstAttribute="height" constant="163" id="t7D-Py-MZK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow2Fly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcS-WN-QBG">
+                                        <rect key="frame" x="48" y="181" width="279" height="63"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="63" id="3rP-q2-TPu"/>
+                                            <constraint firstAttribute="width" constant="279" id="pVj-Jq-jDx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="helicopter" translatesAutoresizingMaskIntoConstraints="NO" id="Mzx-7w-78w">
+                                        <rect key="frame" x="105" y="48" width="164" height="125"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="125" id="9Gz-CD-ccU"/>
+                                            <constraint firstAttribute="width" constant="164" id="mfT-1a-EbD"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PipeUp" translatesAutoresizingMaskIntoConstraints="NO" id="IdJ-Q3-jrn">
+                                        <rect key="frame" x="279" y="539" width="65" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="65" id="CsF-Zo-4jV"/>
+                                            <constraint firstAttribute="height" constant="128" id="zj5-pg-FbH"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="FzX-Cz-eVA" firstAttribute="top" secondItem="rcS-WN-QBG" secondAttribute="bottom" constant="8" id="9H5-8L-sUQ"/>
+                                    <constraint firstItem="FzX-Cz-eVA" firstAttribute="centerY" secondItem="Lf6-T5-l05" secondAttribute="centerY" id="Cin-V8-NNL"/>
+                                    <constraint firstItem="dJK-VN-jLH" firstAttribute="centerX" secondItem="Lf6-T5-l05" secondAttribute="centerX" id="GEm-Dv-LoE"/>
+                                    <constraint firstItem="rcS-WN-QBG" firstAttribute="top" secondItem="Mzx-7w-78w" secondAttribute="bottom" constant="8" id="ReE-Jj-3tI"/>
+                                    <constraint firstAttribute="trailing" secondItem="IdJ-Q3-jrn" secondAttribute="trailing" constant="31" id="UIc-Mi-gT6"/>
+                                    <constraint firstItem="dJK-VN-jLH" firstAttribute="top" secondItem="FzX-Cz-eVA" secondAttribute="bottom" constant="8" id="kGm-mF-3dS"/>
+                                    <constraint firstItem="FzX-Cz-eVA" firstAttribute="centerX" secondItem="Lf6-T5-l05" secondAttribute="centerX" id="liW-5W-9h3"/>
+                                    <constraint firstAttribute="bottom" secondItem="IdJ-Q3-jrn" secondAttribute="bottom" id="oYG-7R-w8Q"/>
+                                    <constraint firstItem="Mzx-7w-78w" firstAttribute="centerX" secondItem="Lf6-T5-l05" secondAttribute="centerX" id="uKL-tp-62W"/>
+                                    <constraint firstItem="rcS-WN-QBG" firstAttribute="centerX" secondItem="Lf6-T5-l05" secondAttribute="centerX" id="wnN-BA-sZp"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="chS-Qm-dpS" secondAttribute="trailing" constant="8" id="bTz-gb-caJ"/>
-                            <constraint firstItem="chS-Qm-dpS" firstAttribute="top" secondItem="maK-i9-Uhn" secondAttribute="bottom" constant="8" id="pJ7-3q-Arp"/>
+                            <constraint firstItem="Lf6-T5-l05" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" id="4Jg-I5-sXX"/>
+                            <constraint firstAttribute="trailing" secondItem="Lf6-T5-l05" secondAttribute="trailing" id="G3n-Cn-vqu"/>
+                            <constraint firstItem="khH-OB-KpY" firstAttribute="top" secondItem="Lf6-T5-l05" secondAttribute="bottom" id="kMv-pQ-gaJ"/>
+                            <constraint firstItem="Lf6-T5-l05" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="wCq-CV-0By"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="allow2PairButton" destination="chS-Qm-dpS" id="qBn-EM-XLZ"/>
+                        <outlet property="view" destination="3se-qz-xqx" id="vIg-zC-Ghe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="89.505247376311857"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="PipeUp" width="30" height="160"/>
+        <image name="helicopter" width="256" height="256"/>
+    </resources>
 </document>
