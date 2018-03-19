@@ -37,10 +37,10 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Before your children can play this game, you need to pair it with a free Allow2 parent account." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FzX-Cz-eVA">
-                                        <rect key="frame" x="40" y="252" width="295" height="163"/>
+                                        <rect key="frame" x="40" y="273" width="295" height="142"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="295" id="Vei-iS-yX0"/>
-                                            <constraint firstAttribute="height" constant="163" id="t7D-Py-MZK"/>
+                                            <constraint firstAttribute="height" constant="142" id="t7D-Py-MZK"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <nil key="textColor"/>
@@ -70,16 +70,28 @@
                                             <constraint firstAttribute="height" constant="128" id="zj5-pg-FbH"/>
                                         </constraints>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With PARENTAL FREEDOM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RU-wa-0MA">
+                                        <rect key="frame" x="40" y="244" width="295" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="uSO-T0-V2j"/>
+                                            <constraint firstAttribute="width" constant="295" id="vc3-5J-Byv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="FzX-Cz-eVA" firstAttribute="top" secondItem="rcS-WN-QBG" secondAttribute="bottom" constant="8" id="9H5-8L-sUQ"/>
-                                    <constraint firstItem="FzX-Cz-eVA" firstAttribute="centerY" secondItem="Lf6-T5-l05" secondAttribute="centerY" id="Cin-V8-NNL"/>
+                                    <constraint firstItem="1RU-wa-0MA" firstAttribute="top" secondItem="rcS-WN-QBG" secondAttribute="bottom" id="8hX-ns-MeS"/>
+                                    <constraint firstItem="FzX-Cz-eVA" firstAttribute="centerY" secondItem="Lf6-T5-l05" secondAttribute="centerY" constant="10.5" id="Cin-V8-NNL"/>
                                     <constraint firstItem="dJK-VN-jLH" firstAttribute="centerX" secondItem="Lf6-T5-l05" secondAttribute="centerX" id="GEm-Dv-LoE"/>
                                     <constraint firstItem="rcS-WN-QBG" firstAttribute="top" secondItem="Mzx-7w-78w" secondAttribute="bottom" constant="8" id="ReE-Jj-3tI"/>
                                     <constraint firstAttribute="trailing" secondItem="IdJ-Q3-jrn" secondAttribute="trailing" constant="31" id="UIc-Mi-gT6"/>
+                                    <constraint firstItem="1RU-wa-0MA" firstAttribute="centerX" secondItem="Lf6-T5-l05" secondAttribute="centerX" id="YrT-6A-Ut6"/>
                                     <constraint firstItem="dJK-VN-jLH" firstAttribute="top" secondItem="FzX-Cz-eVA" secondAttribute="bottom" constant="8" id="kGm-mF-3dS"/>
                                     <constraint firstItem="FzX-Cz-eVA" firstAttribute="centerX" secondItem="Lf6-T5-l05" secondAttribute="centerX" id="liW-5W-9h3"/>
+                                    <constraint firstItem="FzX-Cz-eVA" firstAttribute="top" secondItem="1RU-wa-0MA" secondAttribute="bottom" constant="8" id="nsX-zD-ylb"/>
                                     <constraint firstAttribute="bottom" secondItem="IdJ-Q3-jrn" secondAttribute="bottom" id="oYG-7R-w8Q"/>
                                     <constraint firstItem="Mzx-7w-78w" firstAttribute="centerX" secondItem="Lf6-T5-l05" secondAttribute="centerX" id="uKL-tp-62W"/>
                                     <constraint firstItem="rcS-WN-QBG" firstAttribute="centerX" secondItem="Lf6-T5-l05" secondAttribute="centerX" id="wnN-BA-sZp"/>
@@ -95,6 +107,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="pairView" destination="Lf6-T5-l05" id="Feg-FZ-87S"/>
                         <outlet property="view" destination="3se-qz-xqx" id="vIg-zC-Ghe"/>
                     </connections>
                 </viewController>

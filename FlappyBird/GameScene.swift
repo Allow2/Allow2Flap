@@ -9,7 +9,7 @@
 import SpriteKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate{
-    let verticalPipeGap = 150.0
+    let verticalPipeGap = 200.0
     
     var bird:SKSpriteNode!
     var skyColor:SKColor!
@@ -32,7 +32,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         canRestart = false
         
         // setup physics
-        self.physicsWorld.gravity = CGVector( dx: 0.0, dy: -5.0 )
+        self.physicsWorld.gravity = CGVector( dx: 0.0, dy: -4.0 )
         self.physicsWorld.contactDelegate = self
         
         // setup background color
@@ -103,15 +103,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         birdTexture1.filteringMode = .nearest
         let birdTexture2 = SKTexture(imageNamed: "bird-02")
         birdTexture2.filteringMode = .nearest
+        let birdTexture3 = SKTexture(imageNamed: "bird-03")
+        birdTexture3.filteringMode = .nearest
+        let birdTexture4 = SKTexture(imageNamed: "bird-04")
+        birdTexture4.filteringMode = .nearest
         
-        let anim = SKAction.animate(with: [birdTexture1, birdTexture2], timePerFrame: 0.2)
+        let anim = SKAction.animate(with: [birdTexture1, birdTexture2, birdTexture3, birdTexture4], timePerFrame: 0.2)
         let flap = SKAction.repeatForever(anim)
         
         bird = SKSpriteNode(texture: birdTexture1)
         bird.setScale(2.0)
         bird.position = CGPoint(x: self.frame.size.width * 0.35, y:self.frame.size.height * 0.6)
         bird.run(flap)
-        
         
         bird.physicsBody = SKPhysicsBody(circleOfRadius: bird.size.height / 2.0)
         bird.physicsBody?.isDynamic = true

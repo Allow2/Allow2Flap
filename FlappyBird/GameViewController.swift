@@ -44,8 +44,8 @@ class GameViewController: UIViewController {
         if let scene = GameScene.unarchiveFromFile("GameScene") as? GameScene {
             // Configure the view.
             let skView = self.view as! SKView
-            skView.showsFPS = true
-            skView.showsNodeCount = true
+            skView.showsFPS = false
+            skView.showsNodeCount = false
             
             /* Sprite Kit applies additional optimizations to improve rendering performance */
             skView.ignoresSiblingOrder = true
@@ -143,7 +143,7 @@ extension GameViewController: Allow2PairingViewControllerDelegate {
         }
         
         DispatchQueue.main.async {
-            self.showAllow2PairButton()
+            self.showPairView()
             if (!result.allowed) {
                 // configure the block screen to explain the issue
                 self.allow2BlockViewController.checkResult(checkResult: result)
