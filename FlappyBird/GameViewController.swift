@@ -121,10 +121,26 @@ extension GameViewController: Allow2PairingViewControllerDelegate {
                 print("paired \(result)")
                 (UIApplication.shared.delegate as! AppDelegate).checkAllow2()
                 self.presentedViewController?.dismiss(animated: true)
+                
                 break
             case .Error(let error):
-                let err = error as NSError
-                let alert = UIAlertController(title: "Error", message: err.localizedDescription, preferredStyle: .alert)
+                guard let err = error as? Allow2Error else {
+                    let err = error as NSError
+                    let alert = UIAlertController(title: "Error", message: err.localizedDescription, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                    (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController?.present( alert, animated: true, completion: nil )
+                    self.presentedViewController?.present(alert, animated: true, completion: nil)
+                    return
+                }
+                var message = ""
+                switch err {
+                case .AlreadyPaired: message = "This game is already paired, remove it from the original account and try again."
+                case .NotAuthorised: message = "You are not authorised to attach this game to your account."
+                case .Other(let msg): message = msg
+                default:
+                    message = "Unknown Error, please try again"
+                }
+                let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                 (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController?.present( alert, animated: true, completion: nil )
                 self.presentedViewController?.present(alert, animated: true, completion: nil)
