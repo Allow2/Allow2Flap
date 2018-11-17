@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C2B2DC1644A768E45BA36DB /* Pods_FlappyBird.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F2431A217763A3006EC3BC /* Pods_FlappyBird.framework */; };
 		2210CCF3843F114E32A116AC /* Pods_FlappyBird.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6FCC17D62E8541A45E708FF /* Pods_FlappyBird.framework */; };
 		43745200193D163700654986 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437451FF193D163700654986 /* AppDelegate.swift */; };
 		43745202193D163700654986 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 43745201193D163700654986 /* GameScene.sks */; };
@@ -25,8 +26,10 @@
 		497A02FB205FC753004B171A /* bird.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 437A3DB9193D326A00909BA0 /* bird.atlas */; };
 		497A02FC205FC753004B171A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E1623DF1E24FC4E00FB2C72 /* LaunchScreen.storyboard */; };
 		497A02FD205FC753004B171A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43745207193D163800654986 /* Main.storyboard */; };
+		49F2431B217763A3006EC3BC /* Pods_FlappyBird.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F2431A217763A3006EC3BC /* Pods_FlappyBird.framework */; };
 		62CDC562291935BEC1056814 /* Pods_FlappyBirdTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74913DAF773AA323C4FA5FA /* Pods_FlappyBirdTests.framework */; };
 		6E1623E01E24FC4E00FB2C72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E1623DF1E24FC4E00FB2C72 /* LaunchScreen.storyboard */; };
+		82F05707E775029430D517DF /* Pods_FlappyBird_Staging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2043BD51626FAD72D5B6557 /* Pods_FlappyBird_Staging.framework */; };
 		A8DBE8927D2CD8CF5D4D77CF /* Pods_FlappyBird.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6FCC17D62E8541A45E708FF /* Pods_FlappyBird.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,12 +59,19 @@
 		437A3DB9193D326A00909BA0 /* bird.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bird.atlas; sourceTree = "<group>"; };
 		497A0303205FC753004B171A /* FlappyBird Staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlappyBird Staging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		497A0304205FC753004B171A /* FlappyBird copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FlappyBird copy-Info.plist"; path = "/Users/andrew/Projects-A2/example/flap/FlappyBird copy-Info.plist"; sourceTree = "<absolute>"; };
+		49F24314217762D9006EC3BC /* Pods_FlappyBird.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_FlappyBird.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49F24316217762F7006EC3BC /* Allow2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Allow2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49F24318217762F7006EC3BC /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49F2431A217763A3006EC3BC /* Pods_FlappyBird.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_FlappyBird.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5528D4215914EAFE13D0E6F4 /* Pods-FlappyBird.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlappyBird.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlappyBird/Pods-FlappyBird.release.xcconfig"; sourceTree = "<group>"; };
+		643EBEAD2C2F26FBAB4D0EF4 /* Pods-FlappyBird Staging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlappyBird Staging.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlappyBird Staging/Pods-FlappyBird Staging.debug.xcconfig"; sourceTree = "<group>"; };
 		6E1623DF1E24FC4E00FB2C72 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F892525B177404E406E6399 /* Pods-FlappyBirdTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlappyBirdTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlappyBirdTests/Pods-FlappyBirdTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D74913DAF773AA323C4FA5FA /* Pods_FlappyBirdTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlappyBirdTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC2092B1ECF0AA7717EA702 /* Pods-FlappyBird.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlappyBird.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlappyBird/Pods-FlappyBird.debug.xcconfig"; sourceTree = "<group>"; };
+		F2043BD51626FAD72D5B6557 /* Pods_FlappyBird_Staging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlappyBird_Staging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6FCC17D62E8541A45E708FF /* Pods_FlappyBird.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlappyBird.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB090431BA2D89ED26B3E90 /* Pods-FlappyBird Staging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlappyBird Staging.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlappyBird Staging/Pods-FlappyBird Staging.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,7 @@
 				A8DBE8927D2CD8CF5D4D77CF /* Pods_FlappyBird.framework in Frameworks */,
 				2210CCF3843F114E32A116AC /* Pods_FlappyBird.framework in Frameworks */,
 				464281BFC0600370A03EB1E6 /* Pods_FlappyBird.framework in Frameworks */,
+				1C2B2DC1644A768E45BA36DB /* Pods_FlappyBird.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +98,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F2431B217763A3006EC3BC /* Pods_FlappyBird.framework in Frameworks */,
+				82F05707E775029430D517DF /* Pods_FlappyBird_Staging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +177,8 @@
 				1125C7BDE6075E4F04C134FC /* Pods-FlappyBirdTests.release.xcconfig */,
 				DEC2092B1ECF0AA7717EA702 /* Pods-FlappyBird.debug.xcconfig */,
 				5528D4215914EAFE13D0E6F4 /* Pods-FlappyBird.release.xcconfig */,
+				643EBEAD2C2F26FBAB4D0EF4 /* Pods-FlappyBird Staging.debug.xcconfig */,
+				FDB090431BA2D89ED26B3E90 /* Pods-FlappyBird Staging.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -171,8 +186,13 @@
 		F56D38D69C9E8707A60B3927 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49F2431A217763A3006EC3BC /* Pods_FlappyBird.framework */,
+				49F24316217762F7006EC3BC /* Allow2.framework */,
+				49F24318217762F7006EC3BC /* SVProgressHUD.framework */,
+				49F24314217762D9006EC3BC /* Pods_FlappyBird.framework */,
 				F6FCC17D62E8541A45E708FF /* Pods_FlappyBird.framework */,
 				D74913DAF773AA323C4FA5FA /* Pods_FlappyBirdTests.framework */,
+				F2043BD51626FAD72D5B6557 /* Pods_FlappyBird_Staging.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -189,8 +209,7 @@
 				437451F6193D163700654986 /* Sources */,
 				437451F7193D163700654986 /* Frameworks */,
 				437451F8193D163700654986 /* Resources */,
-				5ACF21E7A18905E382A221CA /* [CP] Embed Pods Frameworks */,
-				7F547FB336C3851412A0E346 /* [CP] Copy Pods Resources */,
+				548431A265B300A082EA07EA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -209,8 +228,6 @@
 				4374520C193D163800654986 /* Sources */,
 				4374520D193D163800654986 /* Frameworks */,
 				4374520E193D163800654986 /* Resources */,
-				BDE314DE512A228A06A36042 /* [CP] Embed Pods Frameworks */,
-				FF95F29250AC8BA64B459FCF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,10 +243,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 497A0300205FC753004B171A /* Build configuration list for PBXNativeTarget "FlappyBird Staging" */;
 			buildPhases = (
+				127BFF9DB76758C84148E881 /* [CP] Check Pods Manifest.lock */,
 				497A02F0205FC753004B171A /* Increment Build Number */,
 				497A02F1205FC753004B171A /* Sources */,
 				497A02F5205FC753004B171A /* Frameworks */,
 				497A02F8205FC753004B171A /* Resources */,
+				6223A76AA92E3F72C7E28D2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -339,6 +358,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		127BFF9DB76758C84148E881 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlappyBird Staging-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		497A02F0205FC753004B171A /* Increment Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,7 +404,7 @@
 			shellPath = /bin/sh;
 			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
 		};
-		5ACF21E7A18905E382A221CA /* [CP] Embed Pods Frameworks */ = {
+		548431A265B300A082EA07EA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -375,29 +412,36 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FlappyBird/Pods-FlappyBird-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Allow2/Allow2.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Allow2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlappyBird/Pods-FlappyBird-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7F547FB336C3851412A0E346 /* [CP] Copy Pods Resources */ = {
+		6223A76AA92E3F72C7E28D2F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FlappyBird Staging/Pods-FlappyBird Staging-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Allow2/Allow2.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Allow2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlappyBird/Pods-FlappyBird-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlappyBird Staging/Pods-FlappyBird Staging-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9DA9E6B8BA1264AF33458CB9 /* [CP] Check Pods Manifest.lock */ = {
@@ -416,36 +460,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BDE314DE512A228A06A36042 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlappyBirdTests/Pods-FlappyBirdTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FF95F29250AC8BA64B459FCF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlappyBirdTests/Pods-FlappyBirdTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -652,6 +666,7 @@
 		};
 		497A0301205FC753004B171A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 643EBEAD2C2F26FBAB4D0EF4 /* Pods-FlappyBird Staging.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L44G2T7U48;
@@ -665,6 +680,7 @@
 		};
 		497A0302205FC753004B171A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDB090431BA2D89ED26B3E90 /* Pods-FlappyBird Staging.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L44G2T7U48;
