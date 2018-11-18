@@ -1,5 +1,5 @@
 PODS:
-  - Allow2 (1.4.0):
+  - Allow2 (1.5.2):
     - SVProgressHUD (~> 2.2.5)
   - SVProgressHUD (2.2.5)
 
@@ -12,9 +12,9 @@ SPEC REPOS:
     - SVProgressHUD
 
 SPEC CHECKSUMS:
-  Allow2: 0382eee352a9d3f0629f8b298595e600875358b2
+  Allow2: 54e9f64185e8552fa6e1871d0e78a6f10bb00200
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
 PODFILE CHECKSUM: 1c191274628ef9dbfebce326e80f3b0469c95f20
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.5.2
